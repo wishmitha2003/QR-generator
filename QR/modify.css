@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://files.oaiusercontent.com/file-QGM5nQpyD2cZ6wxrhncdLo?se=2025-03-19T06%3A39%3A27Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D38102e18-2a7a-4ace-acdb-a3d1e34622de.webp&sig=nTqMyoHI9SJdug2rKxWQ/Y7qBHeikqYqSmn9QO37u2k%3D') center/cover no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 60, 114, 0.7); /* Blue overlay */
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2a5298;
+    box-shadow: 0px 0px 5px rgba(42, 82, 152, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #2a5298;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+.qr-frame {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #131212;
+    display: inline-block;
+    border-radius: 6px;
+    background: #f9f9f9;
+}
+
+img {
+    display: none;
+    width: 150px;
+    height: 150px;
+}
+
+/* QR Code Download Button */
+#downloadButton {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+#downloadButton:hover {
+    background: #218838;
+}
